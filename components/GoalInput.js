@@ -23,7 +23,10 @@ function GoalInput(props) {
   return (
     <Modal visible={props.visible} animationType="slide">
       <View style={styles.inputContainer}>
-        <Image style={styles.image} source={require("../assets/images/goal.png")} />
+        <Image
+          style={styles.image}
+          source={require("../assets/images/goal.png")}
+        />
         <TextInput
           style={styles.textInput}
           placeholder="Your course goal!"
@@ -51,7 +54,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 16,
-    backgroundColor: "#311b6b"
+    backgroundColor: "#311b6b",
   },
   image: {
     height: 100,
